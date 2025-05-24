@@ -19,6 +19,100 @@ textarea,
     border-radius: 0!important;
 }
 
+body input,textarea,.btn {
+    border-radius: 5px!important;
+}
+
+/* panel default round style not rounded on bottom, most panels are not collapsed therfore this is the better default*/
+body .panel {
+    border-radius: 5px!important;
+}
+
+body .panel-footer{
+    border-radius: 0 0 5px 5px!important;
+}
+
+body .panel-heading {
+    border-radius: 5px 5px 0 0!important;
+}
+
+/* fix plue panels that are not collapsed */
+body .panel-heading:has(+ .collapse:not(.in):not(.is-filters)) {
+    border-radius: 5px!important;
+}
+
+body .panel-heading:has(+ .is-filters:not(.in):not(.collapsing)) {
+    border-radius: 5px!important;
+}
+
+/* fix blue header panel in components */
+/* body .panel-heading.tight:has(.has-filters) {
+    border-radius: 5px!important;
+} */
+
+/* fix blue header panel in metrics overview*/
+body .row .panel-heading:has(~ .product-graphs-overview) {
+    border-radius: 5px 5px 0 0!important;
+}
+
+/* fix visual border glich in secondary panels with table */
+.panel-default-secondary .table-responsive {
+    border-radius: 0 0 5px 5px!important;
+}
+
+
+/* body #base-content nav{
+    border-radius: 5px!important;
+} */
+
+/* Fix borders radious on field in navbar */
+body .custom-search-form input {
+    border-radius: 5px 0 0 5px!important;
+}
+body .custom-search-form .btn{
+    border-radius: 0 5px 5px 0!important;
+}
+
+/* set roundet border on top of navigation tabs eg. in product view*/
+.nav-tabs .active{
+    border-width: 1px;
+    border-radius: 5px 5px 0 0!important;
+}
+
+/* make the bades with the numbers round*/
+body .dropdown .badge {
+    border-radius: 5px !important;
+}
+
+/* set border radius of gray field where you are currently e.g Home/Product List */
+.breadcrumb {
+    border-width: 1px;
+    border-radius: 5px!important;
+}
+
+/* fix vertical missalignment of checkbox and text in multiple settings pages*/
+.checkbox label {
+  display: inline-flex;      
+  align-items: center;     
+}
+
+/* fix rows padding in tables*/
+.table-condensed > tbody > tr > td {
+    /* fix table content */
+    padding-top: 8px!important;
+    padding-bottom: 8px!important;
+}
+.table-condensed > tbody > tr > th {
+    /* fix header line */
+    padding-top: 8px!important;
+    padding-bottom: 8px!important;
+}
+
+.table > thead:first-child > tr:first-child > th {
+    border-top: 1px solid #ddd !important;
+}
+
+
 .table-condensed > tbody > tr > td,
 .table-condensed > tbody > tr > th,
 .table-condensed > tfoot > tr > td,
