@@ -79,6 +79,10 @@ body .custom-search-form .btn{
     border-radius: 5px 5px 0 0!important;
 }
 
+body .nav-tabs > li > a{
+    border-radius: 5px 5px 0 0!important;
+}
+
 /* make the bades with the numbers round*/
 body .dropdown .badge {
     border-radius: 5px !important;
